@@ -1,7 +1,7 @@
 
-n1 = 10
-n2 = 20
+n1 = int(input("Coloque o primeiro numero: "))
+n2 = int(input("Coloque o segundo numero: "))
 
 conta = n1 + n2 
 
-print(conta)
+print(f"Resultado: {conta}")
