@@ -1,2 +1,2 @@
 # git_estudos
-repositório teste para estudo do git
+repositório apenas para estudo do git
