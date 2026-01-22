@@ -6,5 +6,9 @@ conta = n1 + n2
 
 num = 20 + 30
 num2 = 230 + 20
+
+outra_conta = 300 + 20
+
 print(f"Resultado: {conta}")
 print(f"Outras adição\n20 + 30 = {num}\n230 + 20 = {num2}")
+print("Outra conta: ", outra_conta)
