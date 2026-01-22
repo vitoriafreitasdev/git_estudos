@@ -7,4 +7,4 @@ conta = n1 + n2
 num = 20 + 30
 
 print(f"Resultado: {conta}")
-print(f"Outro adição: 20 + 30 = {num}")
+print(f"Outra adição\n20 + 30 = {num}")
