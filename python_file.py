@@ -8,7 +8,7 @@ add2 = 20 + 30
 add3 = 230 + 20
 
 div = 40 / 2
-div2 = 50 / 2
+div2 = 80 / 4
 
 division = n1 / n2
 
