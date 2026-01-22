@@ -2,13 +2,16 @@
 n1 = int(input("Coloque o primeiro numero: "))
 n2 = int(input("Coloque o segundo numero: "))
 
-conta = n1 + n2 
+add2 = 20 + 30
+add3 = 230 + 20
 
-num = 20 + 30
-num2 = 230 + 20
 
-outra_conta = 300 + 20
+div = 40 / 2
+div2 = 50 / 2
 
-print(f"Resultado: {conta}")
-print(f"Outras adição\n20 + 30 = {num}\n230 + 20 = {num2}")
-print("Outra conta: ", outra_conta)
+division = n1 / n2
+
+print(f"Outras adição\n20 + 30 = {add2}\n230 + 20 = {add3}")
+print(f"Outras divisões\n40 / 2 = {div}\n50 / 2 = {div2}")
+
+print("Divisão: ", division)
