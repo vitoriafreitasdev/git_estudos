@@ -69,3 +69,4 @@
 
 _**HEAD - na maioria dos casos se refere ao commit mais recente. Quando não aponta para o mais recente commit, você entra no estado da HEAD desanexado**_
 
+* git checkout id-commit => vai para o commit daquel id, assim a HEAD estará desanexada. Para voltar, pode dar git checkout main, assim voltando para main
