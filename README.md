@@ -27,6 +27,8 @@
 
 * git difftool HEAD~2 HEAD~1 => HEAD~2 significa o commit antes do anterior da HEAD, HEAD~1 significa commit anterior da HEAD, então HEAD~NUMERO é igual a HEAD menos aquele NUMERO
 
+* git difftool HEAD~1 HEAD => vai mostrar a diferença entre o commit anterior a HEAD e a HEAD
+
 
 **Comandos para resetar ou refazer commits ou reverter mudanças**
 *** 
