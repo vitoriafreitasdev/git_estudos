@@ -67,5 +67,5 @@
 
 * git show id-commit => vai mostrar o commit daquele ID 
 
-_**HEAD - na maioria dos casos se refere ao commit mais recente**_
+_**HEAD - na maioria dos casos se refere ao commit mais recente. Quando não aponta para o mais recente commit, você entra no estado da HEAD desanexado**_
 
