@@ -67,6 +67,8 @@
 
 * git show id-commit => vai mostrar o commit daquele ID 
 
-_**HEAD - na maioria dos casos se refere ao commit mais recente. Quando não aponta para o mais recente commit, você entra no estado da HEAD desanexado**_
+_**HEAD - na maioria dos casos se refere ao commit mais recente. Quando não aponta para o mais recente commit, você entra no estado da HEAD Detached**_
 
 * git checkout id-commit => vai para o commit daquel id, assim a HEAD estará desanexada. Para voltar, pode dar git checkout main, assim voltando para main
+
+* git checkout -b novo_teste id-commit => Cria um novo branch a partir do commit antigo e muda para ele. Assim você consegue explorar um commit antigo sem criar HEAD Detached
