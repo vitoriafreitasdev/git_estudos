@@ -1,44 +1,63 @@
-git_comandos_aprendidos
+#git_comandos_aprendidos
 
-git status => verificar status atual
+**Comandos básicos**
+*** 
 
-git difftool HEAD => ver a diferença do código atual e do commit HEAD
-
-git log => ver histórico dos commit
-
-git commit -m "Comentário" => commitar com comentário
+*git commit -m "Comentário" => commitar com comentário
  
-git push => fazer o push pro repositório em rede
+*git push => fazer o push pro repositório em rede
 
-git add filename => adicionar o um arquivo 
+*git add filename => adicionar o um arquivo 
 
-git add . => adicionar diversos arquivos modificados
+*git add . => adicionar diversos arquivos modificados
 
-git reset --hard commit_id => resetar para versão daquele commit, a HEAD se torna esse commit 
+**Comandos para ver o estado atual e diferença entre commits**
+*** 
 
-git revert -n commit_id => reverter um commit 
+*git status => verificar status atual
 
-git checkout -- . => reverter mudanças de todos arquivos modificados
+*git difftool HEAD => ver a diferença do código atual e do commit HEAD
 
-git checkout -- filename => reverte mudanças daquele arquivo
+*git log => ver histórico dos commit
 
-git clone link-https => clona um projeto dentro da pasta do diretório atual, não clone um projeto dentro do outro, isso bagunça os repositório no GitHub
+*git difftool id-commit-mais-antigo id-commit-mais-recente
 
-git branch => mostra as branchs 
+**Comandos para resetar ou refazer commits ou reverter mudanças**
+*** 
 
-git branch branch-name => cria uma branch
+*git reset --hard commit_id => resetar para versão daquele commit, a HEAD se torna esse commit 
 
-git checkout branch-name => troca para brach-name
+*git revert -n commit_id => reverter um commit 
 
-git merge branch-name => fazer o merge de uma branch dentro da outra
+*git checkout -- . => reverter mudanças de todos arquivos modificados
 
-git checkout -b branch-name => criar nova branch e ir para ela
+*git checkout -- filename => reverte mudanças daquele arquivo
 
-git push --set-upstream origin branch-name => da um push na branch para ir para o repositório remoto
+**Comandos para criar um clone de repositório, para fazer merge, criar e deletar branch**
+*** 
 
-git show HEAD => vai mostrar o commit da HEAD
+*git clone link-https => clona um projeto dentro da pasta do diretório atual, não clone um projeto dentro do outro, isso bagunça os repositório no GitHub
 
-git show id-commit => vai mostrar o commit daquele ID 
+*git branch => mostra as branchs 
 
-HEAD - na maioria dos casos se refere ao commit mais recente
+*git branch branch-name => cria uma branch
+
+*git branch -d branch-name => deletar uma branch
+
+*git checkout branch-name => troca para brach-name
+
+*git merge branch-name => fazer o merge de uma branch dentro da outra
+
+*git checkout -b branch-name => criar nova branch e ir para ela
+
+*git push --set-upstream origin branch-name => da um push na branch para ir para o repositório remoto
+
+**Comandos para mostrar um commit**
+*** 
+
+*git show HEAD => vai mostrar o commit da HEAD
+
+*git show id-commit => vai mostrar o commit daquele ID 
+
+_**HEAD - na maioria dos casos se refere ao commit mais recente**_
 
