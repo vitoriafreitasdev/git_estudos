@@ -36,4 +36,9 @@ git checkout -b branch-name => criar nova branch e ir para ela
 
 git push --set-upstream origin branch-name => da um push na branch para ir para o repositório remoto
 
+git show HEAD => vai mostrar o commit da HEAD
+
+git show id-commit => vai mostrar o commit daquele ID 
+
+HEAD - na maioria dos casos se refere ao commit mais recente
 
