@@ -9,6 +9,9 @@ add3 = 230 + 20
 
 sub = n1 - n2
 
+sub1 = 30 - 23 
+sub2 = 60 - 31
+
 add4 = 200 + 300
 add5 = 30 + 24
 
@@ -25,4 +28,6 @@ print(f"Resultado de {n1} - {n2} = {sub}")
 print(f"Resultado de {n1} / {n2} = {division}")
 
 print(f"Outras adições\n20 + 30 = {add2}\n230 + 20 = {add3}")
+print(f"Outras Subtrações\n30 - 23 = {sub1}\n60 - 31 = {sub2}")
 print(f"Outras divisões\n40 / 2 = {div}\n50 / 3 = {div2}")
+
