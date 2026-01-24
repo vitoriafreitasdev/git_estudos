@@ -5,14 +5,26 @@
 
 **Comandos básicos**
 *** 
+* git init => para iniciar um repositório local no diretório atual 
+
+* git remote add origin <link-https> => para depois integrar ap repositório remoto do github
+
+* git add -A => Adiciona arquivos novos, modificados e deletados de todo o repositório
 
 * git commit -m "Comentário" => commitar com comentário
  
 * git push => fazer o push pro repositório em rede
 
-* git add filename => adicionar o um arquivo 
+* git add filename => adicionar um arquivo 
 
-* git add . => adicionar diversos arquivos modificados
+* git add . => adicionar diversos arquivos 
+
+* git push origin master
+
+* git pull origin master
+
+**Para remover o .git**
+* rm -rf .git
 
 **Comandos para ver o estado atual e diferença entre commits**
 *** 
@@ -25,7 +37,7 @@
 
 * git difftool id-commit-mais-antigo id-commit-mais-recente
 
-* git difftool HEAD~2 HEAD~1 => HEAD~2 significa o commit antes do anterior da HEAD, HEAD~1 significa commit anterior da HEAD, então HEAD~NUMERO é igual a HEAD menos aquele NUMERO
+* git difftool HEAD~2 HEAD~1git difftool HEAD~2 HEAD~1 => HEAD~2 significa o commit antes do anterior da HEAD, HEAD~1 significa commit anterior da HEAD, então HEAD~NUMERO é igual a HEAD menos aquele NUMERO
 
 * git difftool HEAD~1 HEAD => vai mostrar a diferença entre o commit anterior a HEAD e a HEAD
 
@@ -41,10 +53,32 @@
 
 * git checkout -- filename => reverte mudanças daquele arquivo
 
-**Comandos para criar um clone de repositório, para fazer merge, criar e deletar branch**
+**Comandos para criar um clone de repositório**
 *** 
 
 * git clone link-https => clona um projeto dentro da pasta do diretório atual, não clone um projeto dentro do outro, isso bagunça os repositório no GitHub
+
+* git clone <url> <diretório-destino> => Clona o repositório para um diretório específico que você nomeou. Se a pasta já existir, ocorrerá erro (a menos que esteja vazia)
+
+* git clone <url> . => Clona o repositório diretamente no diretório atual. Sobrescreve o diretório atual se não estiver vazio (Git pede confirmação). Útil apenas quando você está em um diretório vazio e quer clonar ali
+
+* git clone https://github.com/usuario/repo.git backend => Baixa o repositório do GitHub e cria uma nova pasta chamada backend no diretório atual
+
+* git clone https://github.com/usuario/repo.git "C:\projeto_sistema" => Cria a pasta projeto_sistema na raiz do drive C:\ se ela não existir
+
+* git clone https://github.com/usuario/repo.git "C:\projeto_sistema\repo" => Isso criará uma subpasta 'repo' dentro de 'projeto_sistema'
+
+**Exemplo**
+
+# 1. Entre na pasta existente
+cd "C:\projeto_sistema"
+
+# 2. Crie uma subpasta para o clone
+git clone https://github.com/usuario/repo.git codigo-fonte
+
+**Para fazer merge, criar e deletar branch**
+
+* git branch -a => mostra todas as branchs do repositório 
 
 * git branch => mostra as branchs 
 
@@ -69,6 +103,27 @@
 
 _**HEAD - na maioria dos casos se refere ao commit mais recente. Quando não aponta para o mais recente commit, você entra no estado da HEAD Detached**_
 
-* git checkout id-commit => vai para o commit daquel id, assim a HEAD estará desanexada. Para voltar, pode dar git checkout main, assim voltando para main
+* git checkout id-commit => vai para o commit daquele id, assim a HEAD estará desanexada. Para voltar, pode dar git checkout main, assim voltando para main
 
 * git checkout -b novo_teste id-commit => Cria um novo branch a partir do commit antigo e muda para ele. Assim você consegue explorar um commit antigo sem criar HEAD Detached. Podendo fazer testes e alterações e depois, se quiser fazer um merge. É provavel que tenha lidar com conflitos, adicionar as mudanças com git add e depois commitar elas, para enfim finalizar o merge.
+
+**valores de configurações**
+
+* git config --global user.name "Seu Nome" => para configurar seu nome 
+
+* git config --global user.email "seu_email@gmail.com" => para configurar seu email 
+
+* git config --list => lista de 
+
+**Para ajuda**
+
+* git help <verb> => Exemplo: git help config 
+* git <verb> --help => Exemplo git config --help
+
+**Git verbs (verbos Git)**  
+
+* São os comandos que usamos na linha de comando. Como por exemplo o add, commit, push e config. São verbos imperativos que mandam o git realizar alguma ação.
+
+**Comandos para verificar repositório remoto**
+
+* git remote -v
