@@ -19,6 +19,33 @@
 
 * git add . => adicionar diversos arquivos 
 
+* git push origin main
+
+* git pull origin 
+
+**Exemplo de push com -u**
+
+# 1. Novo projeto local (sem remote)
+git init
+git add .
+git commit -m "Primeiro commit"
+
+# 2. Criou repositório no GitHub (vazio)
+
+# 3. Adiciona remote
+git remote add origin https://github.com/usuario/repo.git
+
+# 4. PRIMEIRO PUSH do branch main:
+git push -u origin main
+# ↑↑↑ OBRIGATÓRIO! Configura upstream
+
+# 5. Cria novo branch:
+git checkout -b feature/nova
+
+# 6. PRIMEIRO PUSH deste novo branch:
+git push -u origin feature/nova
+# ↑↑↑ OBRIGATÓRIO de novo!
+
 **Para remover o .git**
 * rm -rf .git
 
@@ -33,7 +60,7 @@
 
 * git difftool id-commit-mais-antigo id-commit-mais-recente
 
-* git difftool HEAD~2 HEAD~1 => HEAD~2 significa o commit antes do anterior da HEAD, HEAD~1 significa commit anterior da HEAD, então HEAD~NUMERO é igual a HEAD menos aquele NUMERO
+* git difftool HEAD~2 HEAD~1git difftool HEAD~2 HEAD~1 => HEAD~2 significa o commit antes do anterior da HEAD, HEAD~1 significa commit anterior da HEAD, então HEAD~NUMERO é igual a HEAD menos aquele NUMERO
 
 * git difftool HEAD~1 HEAD => vai mostrar a diferença entre o commit anterior a HEAD e a HEAD
 
@@ -73,6 +100,8 @@ cd "C:\projeto_sistema"
 git clone https://github.com/usuario/repo.git codigo-fonte
 
 **Para fazer merge, criar e deletar branch**
+
+* git branch -a => mostra todas as branchs do repositório 
 
 * git branch => mostra as branchs 
 
@@ -121,5 +150,6 @@ _**HEAD - na maioria dos casos se refere ao commit mais recente. Quando não apo
 **Comandos para verificar repositório remoto**
 
 * git remote -v
+
 
 

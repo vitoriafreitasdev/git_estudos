@@ -19,9 +19,32 @@
 
 * git add . => adicionar diversos arquivos 
 
-* git push origin master
+* git push origin main
 
-* git pull origin master
+* git pull origin 
+
+**Exemplo de push com -u**
+
+# 1. Novo projeto local (sem remote)
+git init
+git add .
+git commit -m "Primeiro commit"
+
+# 2. Criou repositório no GitHub (vazio)
+
+# 3. Adiciona remote
+git remote add origin https://github.com/usuario/repo.git
+
+# 4. PRIMEIRO PUSH do branch main:
+git push -u origin main
+# ↑↑↑ OBRIGATÓRIO! Configura upstream
+
+# 5. Cria novo branch:
+git checkout -b feature/nova
+
+# 6. PRIMEIRO PUSH deste novo branch:
+git push -u origin feature/nova
+# ↑↑↑ OBRIGATÓRIO de novo!
 
 **Para remover o .git**
 * rm -rf .git
