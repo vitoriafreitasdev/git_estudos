@@ -33,6 +33,7 @@ division = n1 / n2
 conta = (((n1 * 2) * 10) / 2) ** 2  
 
 outra_conta = (((n2 * 3) * 5) / 3) ** 3
+conta2 = ((((10 * 4) * 2) / 4)) ** 3
 
 
 print("\n===== Adições =====\n")
