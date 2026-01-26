@@ -23,6 +23,9 @@
 
 * git pull origin 
 
+* git log --stat => vai mostrar as mudanças de cada commit, arquivos que foram modificados ou adicionados
+
+
 **Exemplo de push com -u**
 
 # 1. Novo projeto local (sem remote)
@@ -69,6 +72,10 @@ git push -u origin feature/nova
 *** 
 
 * git reset --hard commit_id => resetar para versão daquele commit, a HEAD se torna esse commit 
+
+* git reset --sofit commit_id => resetar para versão daquele commit, mas as mudanças continuam
+
+* git reset commit_id => resetar para versão daquele commit, mas as mudanças continuam, mas nao estao adicionas
 
 * git revert -n commit_id => reverter um commit 
 
