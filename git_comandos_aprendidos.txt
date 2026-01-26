@@ -117,6 +117,8 @@ git clone https://github.com/usuario/repo.git codigo-fonte
 
 * git push --set-upstream origin branch-name => da um push na branch para ir para o repositório remoto
 
+* git branch --merged => mostra as branch que foram merged
+
 **Comandos para mostrar um commit**
 *** 
 
