@@ -117,7 +117,7 @@ git clone https://github.com/usuario/repo.git codigo-fonte
 
 * git push --set-upstream origin branch-name => da um push na branch para ir para o repositório remoto
 
-* git branch --merged => mostra as branch que foram merged
+* git push origin --delete branch-name => para deletar a branch do repositório remoto
 
 **Comandos para mostrar um commit**
 *** 
@@ -152,6 +152,4 @@ _**HEAD - na maioria dos casos se refere ao commit mais recente. Quando não apo
 **Comandos para verificar repositório remoto**
 
 * git remote -v
-
-
 

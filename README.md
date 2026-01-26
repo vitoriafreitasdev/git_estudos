@@ -117,6 +117,8 @@ git clone https://github.com/usuario/repo.git codigo-fonte
 
 * git push --set-upstream origin branch-name => da um push na branch para ir para o repositório remoto
 
+* git push origin --delete branch-name => para deletar a branch do repositório remoto
+
 **Comandos para mostrar um commit**
 *** 
 
