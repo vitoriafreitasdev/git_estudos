@@ -25,7 +25,7 @@
 
 * git log --stat => vai mostrar as mudanças de cada commit, arquivos que foram modificados ou adicionados
 
-
+* git reflog => mostra os commits, mesmos os que foram resetados
 **Exemplo de push com -u**
 
 # 1. Novo projeto local (sem remote)
@@ -73,7 +73,7 @@ git push -u origin feature/nova
 
 * git reset --hard commit_id => resetar para versão daquele commit, a HEAD se torna esse commit 
 
-* git reset --sofit commit_id => resetar para versão daquele commit, mas as mudanças continuam
+* git reset --soft commit_id => resetar para versão daquele commit, mas as mudanças continuam
 
 * git reset commit_id => resetar para versão daquele commit, mas as mudanças continuam, mas nao estao adicionas
 
@@ -90,6 +90,8 @@ git push -u origin feature/nova
 * git commit --amend -m "Texto..." => para refazer a mensagem de commit anterior, isso muda o git history, so fazer isso se somos os unicos que tem acesso a ele, caso tenha outros trabalhando no mesmo repositório pode causar problemas.
 
 * git commit --amend => para adicionar novas mudanças no commit anterior, sem fazer um novo, mas muda o git history
+
+* git clean -df => para tirar untracked files
 
 **Comandos para criar um clone de repositório**
 *** 

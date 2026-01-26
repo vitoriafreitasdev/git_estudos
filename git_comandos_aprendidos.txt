@@ -73,7 +73,7 @@ git push -u origin feature/nova
 
 * git reset --hard commit_id => resetar para versão daquele commit, a HEAD se torna esse commit 
 
-* git reset --sofit commit_id => resetar para versão daquele commit, mas as mudanças continuam
+* git reset --soft commit_id => resetar para versão daquele commit, mas as mudanças continuam
 
 * git reset commit_id => resetar para versão daquele commit, mas as mudanças continuam, mas nao estao adicionas
 
@@ -167,6 +167,3 @@ _**HEAD - na maioria dos casos se refere ao commit mais recente. Quando não apo
 **Comandos para verificar repositório remoto**
 
 * git remote -v
-
-
-
