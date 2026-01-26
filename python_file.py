@@ -6,7 +6,7 @@ n2 = int(input("Coloque o segundo numero: "))
 add = n1 + n2 
 
 add2 = 20 + 30
-add3 = 230 + 20
+adicao = 200 + 30
 
 add4 = 200 + 300
 add5 = 30 + 24
@@ -35,7 +35,7 @@ conta = (((n1 * 2) * 10) / 2) ** 2
 
 print("\n===== Adições =====\n")
 print(f"Resultado de {n1} + {n2} = {add}")
-print(f"Outras adições\n20 + 30 = {add2}\n230 + 20 = {add3}")
+print(f"Outras adições\n20 + 30 = {add2}\n200 + 30 = {adicao}")
 
 print("\n===== Subtrações =====\n")
 print(f"Resultado de {n1} - {n2} = {sub}")
