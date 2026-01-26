@@ -80,6 +80,8 @@ git push -u origin feature/nova
 
 * git checkout filename => reverte mudanças daquele arquivo, pode confudir se quer reverter a mudanças ou mudar para a branch com um nome igual
 
+* git commit --amend -m "Texto..." => para refazer a mensagem de commit anterior, isso muda o git history, so fazer isso se somos os unicos que tem acesso a ele, caso tenha outros trabalhando no mesmo repositório pode causar problemas.
+
 **Comandos para criar um clone de repositório**
 *** 
 
