@@ -32,6 +32,8 @@ division = n1 / n2
 #Conta extras
 conta = (((n1 * 2) * 10) / 2) ** 2  
 
+conta2 = ((((10 * 4) * 2) / 4)) ** 3
+
 
 print("\n===== Adições =====\n")
 print(f"Resultado de {n1} + {n2} = {add}")
