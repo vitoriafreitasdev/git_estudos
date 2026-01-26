@@ -77,7 +77,13 @@ git push -u origin feature/nova
 
 * git reset commit_id => resetar para versão daquele commit, mas as mudanças continuam, mas nao estao adicionas
 
-* git revert -n commit_id => reverter um commit 
+* git revert -n commit_id => reverter um commit. Desfaz as alterações mas NÃO cria um commit automaticamente
+
+* git revert <commit-id> => reverter um commit - Cria um novo commit que desfaz as alterações do commit especificado. Aplica o revert imediatamente e faz commit. O histórico mostra tanto o commit original quanto o commit de revert
+
+* git reset mexe no git history, git revert não
+
+* Use revert para commits públicos/compartilhados e reset apenas para commits privados/locais.
 
 * git checkout -- . => reverter mudanças de todos arquivos modificados
 
