@@ -76,6 +76,10 @@ git push -u origin feature/nova
 
 * git checkout -- filename => reverte mudanças daquele arquivo
 
+* git restore filename => reverte mudanças do arquivo, opção mais moderna
+
+* git checkout filename => reverte mudanças daquele arquivo, pode confudir se quer reverter a mudanças ou mudar para a branch com um nome igual
+
 **Comandos para criar um clone de repositório**
 *** 
 
@@ -152,4 +156,5 @@ _**HEAD - na maioria dos casos se refere ao commit mais recente. Quando não apo
 **Comandos para verificar repositório remoto**
 
 * git remote -v
+
 
