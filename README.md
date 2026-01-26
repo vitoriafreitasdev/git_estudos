@@ -149,6 +149,8 @@ _**HEAD - na maioria dos casos se refere ao commit mais recente. Quando não apo
 
 * git checkout -b novo_teste id-commit => Cria um novo branch a partir do commit antigo e muda para ele. Assim você consegue explorar um commit antigo sem criar HEAD Detached. Podendo fazer testes e alterações e depois, se quiser fazer um merge. É provavel que tenha lidar com conflitos, adicionar as mudanças com git add e depois commitar elas, para enfim finalizar o merge.
 
+* Pode também fazer um git checkout id-commit e apartir dele criar uma branch com o git branch branch-name, depois fazer checkout para main e depois e para a branch que foi criada.
+
 **valores de configurações**
 
 * git config --global user.name "Seu Nome" => para configurar seu nome 
