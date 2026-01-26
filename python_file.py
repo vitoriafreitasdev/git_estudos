@@ -31,9 +31,8 @@ division = n1 / n2
 
 #Conta extras
 conta = (((n1 * 2) * 10) / 2) ** 2  
-
-outra_conta = (((n2 * 3) * 5) / 3) ** 3
 conta2 = ((((10 * 4) * 2) / 4)) ** 3
+outra_conta = (((n2 * 3) * 5) / 3) ** 3
 
 
 print("\n===== Adições =====\n")
@@ -57,4 +56,5 @@ print(f"Resultado de 21 x 3  = {mult2}")
 
 print("\n===== Conta extras =====\n")
 print(f"(((n1 x 2) x 10) / 2)^2 = ", conta)
-
+print(f"((((10 x 4) x 2) / 4))^3 = ", conta2)
+print(f"(((n2 x 3) x 5) / 3)^3 = ", outra_conta)
