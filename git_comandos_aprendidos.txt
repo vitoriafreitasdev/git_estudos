@@ -82,6 +82,8 @@ git push -u origin feature/nova
 
 * git commit --amend -m "Texto..." => para refazer a mensagem de commit anterior, isso muda o git history, so fazer isso se somos os unicos que tem acesso a ele, caso tenha outros trabalhando no mesmo repositório pode causar problemas.
 
+* git commit --amend => para adicionar novas mudanças no commit anterior, sem fazer um novo, mas muda o git history
+
 **Comandos para criar um clone de repositório**
 *** 
 
