@@ -13,3 +13,6 @@ def div(a, b):
 def quad(a):
     return a * 2
 
+def pontencia(a, b):
+    return a ** b
+
