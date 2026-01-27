@@ -11,13 +11,21 @@
 
 * git add -A => Adiciona arquivos novos, modificados e deletados de todo o repositório
 
+* git add -A nome_pasta/ => vai adicionar todas as mudanças dentro daquele arquivo ou git add 
+
+* git add --no-all nome_pasta/ => vai adicionar todas os arquivos, menos os deletados
+
+* git add -u => adiciona todos arquivos modificados ou deletados, mas nenhum untracked files (arquivos novos)
+
+* git add -u nome_pasta/ => adiciona todos arquivos modificados ou deletados, mas nenhum untracked files (arquivos novos) dentro da pasta especificada
+
 * git commit -m "Comentário" => commitar com comentário
  
 * git push => fazer o push pro repositório em rede
 
 * git add filename => adicionar um arquivo 
 
-* git add . => adicionar diversos arquivos 
+* git add . => adicionar todos arquivos dentro do diretório atual  
 
 * git push origin main
 
