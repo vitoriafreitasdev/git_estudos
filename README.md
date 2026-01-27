@@ -177,3 +177,20 @@ _**HEAD - na maioria dos casos se refere ao commit mais recente. Quando não apo
 **Comandos para verificar repositório remoto**
 
 * git remote -v
+
+**Git stash comandos**
+
+* git stash save "texto..." => para salvar mudanças feita na branch na lista de stash, assim caso queira trocar de branch e nao quer commitar as mudanças, a stash list é compartilhada entre as branch
+
+* git stash list => mostra a lista de stash
+
+* git stash clear => limpa a lista de stash
+
+* git stash pop => pega a ultima stash adicionada 
+
+* git stash drop stash-id => exclui essa stash
+
+* git stash apply stash-id => pega essa stash, mas não exclui ela da lista 
+
+
+
