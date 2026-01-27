@@ -126,12 +126,13 @@ git push -u origin feature/nova
 * git clone https://github.com/usuario/repo.git "C:\projeto_sistema\repo" => Isso criará uma subpasta 'repo' dentro de 'projeto_sistema'
 
 **Exemplo**
-
-# 1. Entre na pasta existente
+```
+ 1. Entre na pasta existente
 cd "C:\projeto_sistema"
 
-# 2. Crie uma subpasta para o clone
+ 2. Crie uma subpasta para o clone
 git clone https://github.com/usuario/repo.git codigo-fonte
+```
 
 **Para fazer merge, criar e deletar branch**
 
